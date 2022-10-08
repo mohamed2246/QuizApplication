@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_edietText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/editetextlayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/stuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم الطالب"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/stuNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الطالب"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+
+        <TextView
+            android:id="@+id/stuGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درجة الطالب"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">امتحاني</string>
+    <string name="teacher_name">اسم المدرس ؟</string>
+    <string name="subject_name">اسم المادة ؟</string>
+    <string name="exam_id">كود الامتحان ؟</string>
+    <string name="teacher_num">رقم المعلم ؟</string>
+</resources>

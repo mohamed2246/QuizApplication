@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.StudentRegister"
+
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تسجيل دخول الطالب"
+                android:textSize="24dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_edietText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/editetextlayout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/student_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="اسم الطالب ؟"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/blue"
+
+                    />
+
+                <EditText
+                    android:id="@+id/student_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="رقم الطالب ؟"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/blue"
+                    />
+
+                <EditText
+                    android:id="@+id/stuExamCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="كود الامتحان"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="24dp"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="@color/blue"
+                    />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_stu_EnterExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_edietText"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/editecheckbtn"
+                android:text="الدخول الي الامتحان"
+                android:textSize="20dp"
+                android:textColor="#fff"
+
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher.CreateQuestions"
+    android:layoutDirection="rtl"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="أضافة الأسالة"
+                android:textColor="#FF3700B3"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/editetextlayout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/the_quesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="السؤال ..."
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/blue"
+
+                    />
+
+                <EditText
+                    android:id="@+id/firstOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="الأختيار الاول ..."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+                    />
+
+                <EditText
+                    android:id="@+id/secondOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="الأختيار الثاني ..."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+                    />
+
+                <EditText
+                    android:id="@+id/thirdOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="الأختيار الثالث ..."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+                    />
+
+
+                <EditText
+                    android:id="@+id/fourceOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="الأختيار الرابع ..."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+
+                    />
+
+                <EditText
+                    android:id="@+id/correctOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="الأختيار الصحيح ..."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/blue"
+                    />
+
+                <Button
+                    android:id="@+id/btn_add_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_edietText"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/editecheckbtn"
+                    android:textColor="@color/white"
+                    android:text="أضافة"
+                    android:textSize="16dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineartwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_questions"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/editetextlayout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/exam_Duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="مدة الامتحان ..."
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    />
+
+                <EditText
+                    android:id="@+id/exam_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="وقت الامتحان ..."
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    />
+
+                <EditText
+                    android:id="@+id/exam_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editetextlayout"
+                    android:hint="تاريخ الامتحان ..."
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/create_final_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineartwo"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/editecheckbtn"
+                android:textColor="@color/white"
+                android:text="أنشاء الامتحان"
+                android:textSize="16dp"
+
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

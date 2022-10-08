@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizApplication">
+        <activity android:name=".Student.ResultGrade"></activity>
+        <activity android:name=".Teacher.activeNow" />
+        <activity android:name=".GradeActivity" />
+        <activity android:name=".TecherCatigorie" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".Student.StudentRegister" />
+        <activity
+            android:name=".Student.ExamQuestionsStudent"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".Teacher.CreateQuestions" />
+        <activity android:name=".Teacher.TeacherAuthentication" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

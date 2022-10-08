@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GradeActivity"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    >
+
+    <EditText
+        android:id="@+id/edtgradeCode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editetextlayout"
+        android:hint="كودالامتحان "
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="24dp"
+        android:textColor="@color/blue"
+
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_searchGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/editecheckbtn"
+        android:textColor="@color/white"
+        android:text="بحث"
+        android:textSize="16dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_list1"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</LinearLayout>

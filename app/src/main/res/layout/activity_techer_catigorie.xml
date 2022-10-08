@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TecherCatigorie"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linear_edietText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/editetextlayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاختيارات المتاحة للمدرس"
+            android:textSize="26dp"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnCreateAnExam"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/lineartwo"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/editecheckbtn"
+            android:textColor="@color/white"
+            android:text="أضافة امتحان "
+            android:textSize="24dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/currentStudentconnectTheExam"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/lineartwo"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/editecheckbtn"
+            android:textColor="@color/white"
+            android:text="الطلاب الذين يمتحٌنون الان "
+            android:textSize="24dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_Students_grads"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/lineartwo"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/editecheckbtn"
+            android:textColor="@color/white"
+            android:text="درجات الطلاب"
+            android:textSize="24dp"
+            android:layout_marginBottom="25dp"
+
+
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
